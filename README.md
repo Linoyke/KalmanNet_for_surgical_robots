@@ -25,3 +25,5 @@
 - main file
   
   Set flags, paths, etc..
+
+![Logo](‏‏planar_robot_and_raven_illustration.png)
