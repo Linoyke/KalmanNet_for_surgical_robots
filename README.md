@@ -1,11 +1,20 @@
 # KalmanNet_for_surgical_robots
 
-Planar robot case:
+## Running the code
+- **Planar robot case:**
 
-Use the Planar_robot directory and run the following:
+  Use the Planar_robot directory and run the following:
 
-main_RR_planar_robot.py
+  `python3 main_RR_planar_robot.py`
 
-it will create simulated training and validation sets according to the specifications in the excel file "‏‏Simulations_instructions_for_train_and_validation_sets.xlsx".
+- **Raven II simulated case:**
 
-and a test set according the specifications in the "main_RR_planar_robot.py" file.
+## Parameters Settings
+- Simulations/RR_planar_robot/parameters.py
+  Contains model settings: m, n, f, h, Q and R, L1, L2.
+- Simulations/RR_planar_robot/data/Simulations_instructions_for_train_and_validation_sets.xlsx
+  setting parameters for training and validation sets.
+- Simulations/config.py
+  Contain dataset size, training parameters and network settings.
+- main file
+  Set flags, paths, etc..
