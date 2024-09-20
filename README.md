@@ -1,5 +1,7 @@
 # KalmanNet_for_surgical_robots
 
+![Logo](‏‏planar_robot_and_raven_illustration.png)
+
 ## Running the code
 - **Planar robot case:**
 
@@ -45,4 +47,4 @@
   
   Set flags, paths, etc..
     
-![Logo](‏‏planar_robot_and_raven_illustration.png)
+
