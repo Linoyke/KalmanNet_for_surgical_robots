@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-from Simulations.Raven_ii_matlab.parameters_withbias_trainIK import getJacobian
+from Simulations.raven_ii_matlab.parameters_withbias_trainIK import getJacobian
 
 
 
