@@ -24,7 +24,7 @@ from scipy.stats import zscore
 from Simulations.Extended_sysmdl import SystemModel
 import Simulations.config as config
 from Simulations.utils import Short_Traj_Split
-from Simulations.Raven_ii_matlab.parameters_withbias_trainIK import m1x_0, m2x_0, m, n, f, h, fInacc, Q_structure, R_structure
+from Simulations.raven_ii_matlab.parameters_withbias_trainIK import m1x_0, m2x_0, m, n, f, h, fInacc, Q_structure, R_structure
 from KNet.KalmanNet_nn_withbias_IK import InverseKinematicsNN
 from Pipelines.Pipeline_EKF_withbias_IK import Pipeline_EKF
 from KNet.KalmanNet_nn_withbias_IK import KalmanNetNN
