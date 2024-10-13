@@ -332,62 +332,7 @@ class Pipeline_EKF:
 
             print("Optimal idx:", self.MSE_cv_idx_opt, "Optimal :", self.MSE_cv_dB_opt, "[dB]")
         
-        # TRain set learning curve
-        plt.figure()
-        plt.subplot(3,2,1)
-        plt.plot(self.MSE_train_dB_epoch, label='Training Loss')
-        plt.title('Training Learning Curve')
-        plt.xlabel('Step')
-        plt.ylabel('Loss [dB]')
-        plt.legend()
-        plt.show()
         
-        # CV set learning curve
-       # plt.figure()
-        plt.subplot(3,2,2)
-        plt.plot(self.MSE_cv_dB_epoch, label='validation Loss')
-        plt.title('validation Learning Curve')
-        plt.xlabel('Step')
-        plt.ylabel('Loss [dB]')
-        plt.legend()
-        plt.show()
-        
-        # TRain set learning curve - on obs
-        #plt.figure()
-        plt.subplot(3,2,3)
-        plt.plot(self.MSE_train_dB_epoch_obs, label='Training Loss')
-        plt.title('Training Learning Curve - on observation')
-        plt.xlabel('Step')
-        plt.ylabel('Loss [dB]')
-        plt.legend()
-        plt.show()
-        
-        # CV set learning curve
-        #plt.figure()
-        plt.subplot(3,2,4)
-        plt.plot(self.MSE_cv_dB_epoch_obs, label='validation Loss')
-        plt.title('validation Learning Curve - on observation')
-        plt.xlabel('Epoch')
-        plt.ylabel('Loss [dB]')
-        plt.legend()
-        plt.show()
-        
-        plt.subplot(3,2,5)
-        plt.plot(self.MSE_train_dB_epoch_combined_loss, label='Training Loss')
-        plt.title('Training Learning Curve of combined loss')
-        plt.xlabel('Step')
-        plt.ylabel('Loss [dB]')
-        plt.legend()
-        plt.show()
-        
-        # CV set learning curve
-        plt.subplot(3,2,6)
-        plt.plot(self.MSE_cv_dB_epoch_combined_loss, label='validation Loss')
-        plt.title('validation Learning Curve of combined loss')
-        plt.xlabel('Step')
-        plt.ylabel('Loss [dB]')
-        plt.legend()
-        plt.show()
         return [self.MSE_cv_linear_epoch, self.MSE_cv_dB_epoch, self.MSE_train_linear_epoch, self.MSE_train_dB_epoch]
 
     def NNTest(self, SysModel, test_input, test_target, path_results, MaskOnState=False,\
