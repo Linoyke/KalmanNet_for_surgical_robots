@@ -2,8 +2,8 @@
 
 Welcome to the KalmanNet for surgical robot world.
 
-For the source code of the article "Bias-Aware AI-aided Kalman Tracking for Accurate Tool Localization in Cable-Driven Surgical Robots"
-please go to the following link:
+**For the source code of the article "Bias-Aware AI-aided Kalman Tracking for Accurate Tool Localization in Cable-Driven Surgical Robots"
+please go to the following link:**
 
 https://github.com/Linoyke/KalmanNet-for-Surgical-robots-2
 
